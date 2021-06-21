@@ -22,13 +22,12 @@ class ViewController: UIViewController {
     let lblBottom = makeLabel(withText: "Bottom",
                               withSize: 32)
     
-    
     view.addSubview(lblTop)
     view.addSubview(lblBottom)
     
     lblTop.topAnchor
       .constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,
-                  constant: 8)
+                  constant: 24)
       .isActive = true
     lblTop.centerXAnchor
       .constraint(equalTo: view.centerXAnchor)
@@ -37,7 +36,7 @@ class ViewController: UIViewController {
     // Challenge: Add a bottom label
     lblBottom.bottomAnchor
       .constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor,
-                  constant: -8)
+                  constant: -24)
       .isActive = true
     lblBottom.centerXAnchor
       .constraint(equalTo: view.centerXAnchor)
